@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js</title>
+    <link rel="stylesheet" href="task1.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="task1.js" defer></script>
+
+</head>
+<body>
+    <div id="app">
+        <h4>Semester 01-Result sheet</h4>
+        <div class="set">
+            <div class="model">EEI3346:</div>
+            <input type="number" v-model="input1" @input="input">
+        </div>
+        <div class="set">
+           <div class="model">EEI3262:</div>
+            <input type="number" v-model="input2" @input="input">
+        </div>
+        <div class="set">
+            <div class="model">EEI3266:</div>
+            <input type="number" v-model="input3" @input="input">
+        </div>
+        <div class="set">
+            <div class="model">AGM3203:</div>
+            <input type="number" v-model="input4" @input="input">
+        </div>
+        <div class="set">
+        <div class="model">MHZ3459:</div>
+            <input type="number" v-model="input5" @input="input">
+        </div>
+
+        
+        <div class="model1">Total: {{answer}}, Average: {{average}}</div>
+                
+    </div>
+</body>
+</html>
